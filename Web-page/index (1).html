@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ravi's Kitchen — authentic North Indian food, warm hospitality and fresh ingredients.">
+  <title>Ravi's Kitchen | Authentic Indian Restaurant</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header" id="home">
+    <div class="container nav-wrap">
+      <a href="#home" class="logo">
+        <span class="logo-leaf">⌁</span>
+        <span>Ravi's Kitchen</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-book" href="#book">Book a Table</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">GOOD FOOD <span>•</span> GREAT MOOD</p>
+          <h1>Welcome to<br><em>Ravi's Kitchen</em></h1>
+          <p class="hero-text">
+            Experience the perfect blend of authentic flavors,
+            fresh ingredients and a warm, inviting atmosphere.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#menu">View Menu <span>›</span></a>
+            <a class="btn btn-outline" href="#book">Book a Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+      <div class="container features-grid">
+        <article class="feature">
+          <div class="feature-icon">⌁</div>
+          <h3>Fresh Ingredients</h3>
+          <p>Locally sourced, always fresh.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">♨</div>
+          <h3>Expert Chefs</h3>
+          <p>Crafted with passion &amp; care.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">🍴</div>
+          <h3>Authentic Flavors</h3>
+          <p>Traditional recipes, modern touch.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon">♡</div>
+          <h3>Warm Atmosphere</h3>
+          <p>Good food brings people together.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT / STORY ================= -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <div class="section-label">OUR STORY <span></span></div>
+          <h2>A Family Tradition<br>of Great Food</h2>
+          <p>
+            Ravi's Kitchen was born from a simple idea — to bring people
+            together over delicious, home-style food. What started as a
+            small family kitchen has grown into a place where flavor,
+            tradition and hospitality come together.
+          </p>
+          <p>
+            Every plate is prepared with carefully selected ingredients,
+            time-honored recipes and the warmth of a family meal.
+          </p>
+          <a class="text-btn" href="#menu">Discover our menu <span>→</span></a>
+        </div>
+
+        <div class="about-image image-card">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=85"
+            alt="Warm restaurant dining room"
+          >
+          <div class="image-accent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu-section section" id="menu">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="section-label">OUR MENU <span></span></div>
+          <h2>Made with Love,<br>Served with <em>Passion</em></h2>
+          <p>Traditional Indian favorites prepared fresh every day.</p>
+        </div>
+
+        <div class="menu-filter" role="group" aria-label="Filter menu">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="veg">Vegetarian</button>
+          <button class="filter" data-filter="nonveg">Non-Veg</button>
+        </div>
+
+        <div class="menu-grid" id="menu-list">
+          <article class="menu-card" data-type="nonveg">
+            <div class="menu-photo">
+              <img src="https://th.bing.com/th/id/OIP.DEGzhbOQ35mvY9wVO4_xewHaHa?w=184&h=184&c=7&r=0&o=7&pid=1.7&rm=3" alt="Butter chicken">
+              <span class="price">₹320</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type nonveg-dot">NON-VEG</span>
+              <h3>Butter Chicken</h3>
+              <p>Tandoori chicken simmered in a rich tomato, butter and cream gravy.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-type="veg">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=85" alt="Palak paneer">
+              <span class="price">₹240</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type veg-dot">VEGETARIAN</span>
+              <h3>Palak Paneer</h3>
+              <p>Creamy spinach, garlic and soft paneer finished with gentle spices.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-type="veg">
+            <div class="menu-photo">
+              <img src="https://th.bing.com/th/id/OIP.rHMyCplbYDy50-yvCVyFEAHaHa?w=239&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Indian biryani">
+              <span class="price">₹230</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type veg-dot">VEGETARIAN</span>
+              <h3>Veg Biryani</h3>
+              <p>Fragrant basmati rice layered with vegetables, herbs and whole spices.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-type="nonveg">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=900&q=85" alt="Chicken tikka">
+              <span class="price">₹260</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type nonveg-dot">NON-VEG</span>
+              <h3>Chicken Tikka</h3>
+              <p>Juicy chicken marinated in yogurt and spices, charred in the tandoor.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-type="veg">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=900&q=85" alt="Dal tadka">
+              <span class="price">₹170</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type veg-dot">VEGETARIAN</span>
+              <h3>Dal Tadka</h3>
+              <p>Slow-cooked lentils finished with ghee, garlic, cumin and chili.</p>
+            </div>
+          </article>
+
+          <article class="menu-card" data-type="veg">
+            <div class="menu-photo">
+              <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=85" alt="Indian dessert">
+              <span class="price">₹90</span>
+            </div>
+            <div class="menu-card-body">
+              <span class="food-type veg-dot">VEGETARIAN</span>
+              <h3>Gulab Jamun</h3>
+              <p>Warm, soft milk dumplings soaked in fragrant cardamom syrup.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-bottom">
+          <a class="btn btn-dark" href="#book">View Full Menu <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery-section section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-label">OUR GALLERY <span></span></div>
+          <h2>A Taste of<br><em>Ravi's Kitchen</em></h2>
+          <p>A glimpse into our food, people and the place we call home.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <img class="gallery-main" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1200&q=85" alt="Indian food spread">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=85" alt="Restaurant interior">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85" alt="Fresh Indian dish">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=85" alt="Dining area">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BOOKING ================= -->
+    <section class="booking section" id="book">
+      <div class="container booking-box">
+        <div class="booking-copy">
+          <div class="section-label light">RESERVATIONS <span></span></div>
+          <h2>Make Your<br><em>Evening Special</em></h2>
+          <p>Reserve your table and enjoy a warm dining experience with family and friends.</p>
+          <div class="contact-line">
+            <strong>Call us</strong>
+            <a href="tel:+9123456789">+91 1234567890</a>
+          </div>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <div class="form-grid">
+            <div>
+              <label for="name">Your Name</label>
+              <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="123456789" required>
+            </div>
+            <div>
+              <label for="date">Date</label>
+              <input id="date" type="date" required>
+            </div>
+            <div>
+              <label for="time">Time</label>
+              <select id="time" required>
+                <option value="">Select time</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+            <div>
+              <label for="guests">Guests</label>
+              <select id="guests" required>
+                <option value="">Number of guests</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+                <option>5+ People</option>
+              </select>
+            </div>
+            <div class="full">
+              <label for="message">Special Request</label>
+              <textarea id="message" rows="3" placeholder="Birthday, anniversary, allergies..."></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-gold full-btn" type="submit">Book My Table <span>→</span></button>
+          <p class="form-message" id="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-label">VISIT US <span></span></div>
+          <h2>Come hungry.<br><em>Leave happy.</em></h2>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <h3>Location</h3>
+            <p>12, Market Road<br>Next to the old post office<br>Your City, Karnataka</p>
+          </div>
+          <div>
+            <h3>Opening Hours</h3>
+            <p>Tuesday – Friday: 11:30 AM – 10 PM<br>Saturday – Sunday: 11 AM – 11 PM<br>Monday: Closed</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p><a href="tel:+911234567">+9112345678</a><br>hello@raviskitchen.example</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#home">
+          <span class="logo-leaf">⌁</span>
+          <span>Ravi's Kitchen</span>
+        </a>
+        <p>Authentic Indian food, fresh ingredients and a warm table since 2011.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Reservations</a>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 Ravi's Kitchen. All rights reserved.</span>
+      <span>Made with ♥ for good food.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('show');
+      toggle.setAttribute('aria-expanded', open);
+    });
+
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => nav.classList.remove('show'));
+    });
+
+    // Menu filters
+    const filterButtons = document.querySelectorAll('.filter');
+    const menuCards = document.querySelectorAll('.menu-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const filter = button.dataset.filter;
+
+        menuCards.forEach(card => {
+          card.style.display =
+            filter === 'all' || card.dataset.type === filter ? '' : 'none';
+        });
+      });
+    });
+
+    // Booking form
+    const dateInput = document.getElementById('date');
+    dateInput.min = new Date().toISOString().split('T')[0];
+
+    document.getElementById('booking-form').addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const guests = document.getElementById('guests').value;
+      const note = document.getElementById('message').value.trim();
+
+      const message =
+        `Hello Ravi's Kitchen! I would like to book a table.%0A%0A` +
+        `Name: ${encodeURIComponent(name)}%0A` +
+        `Phone: ${encodeURIComponent(phone)}%0A` +
+        `Date: ${encodeURIComponent(date)}%0A` +
+        `Time: ${encodeURIComponent(time)}%0A` +
+        `Guests: ${encodeURIComponent(guests)}` +
+        (note ? `%0ASpecial request: ${encodeURIComponent(note)}` : '');
+
+      window.open(`https://wa.me/9112345678?text=${message}`, '_blank');
+
+      document.getElementById('form-message').textContent =
+        'Opening WhatsApp with your reservation details...';
+    });
+  </script>
+</body>
+</html>
