@@ -97,7 +97,7 @@ Before publishing, update the WhatsApp number in `index.html`.
 Search for:
 
 ```text
-919876543210
+91123456789
 ```
 
 and replace it with the restaurant's actual WhatsApp number, including the country code.
